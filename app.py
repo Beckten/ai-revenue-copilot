@@ -318,7 +318,7 @@ st.markdown(f"""
 
 st.header("AI Revenue Copilot Chat")
 
-USE_REAL_AI = False  # 🔒 Set to True only for personal use
+USE_REAL_AI = False  # 🔒 
 
 copilot_question = st.text_input(
     "Ask the copilot a revenue question",
@@ -331,7 +331,7 @@ if copilot_question:
     top_accounts = priority_accounts.head(5)
 
     if USE_REAL_AI and os.getenv("OPENAI_API_KEY"):
-        # --- REAL AI (ONLY IF YOU TURN IT ON) ---
+        # --- REAL AI (ONLY IF YOU TURNED ON) ---
         from openai import OpenAI
         client = OpenAI()
 
